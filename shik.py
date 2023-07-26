@@ -4,10 +4,10 @@ import io
 import time
 import speech_recognition as sr
 import openai
+import apikeys2py
 
 # Initialize OpenAI API key
-openai.api_key = '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'
-
+openai.api_key = apikeys2py.openAI_API_KEY
 # Initialize Pygame mixer
 pygame.mixer.init()
 
@@ -41,7 +41,7 @@ def text_to_voice(text):
     url = "https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM"
 
     headers = {
-        'xi-api-key': '5383faaead6cd34a85f7b748cea715f8',
+        'xi-api-key': apikeys2py.xi_api_key,
         'Content-Type': 'application/json',
     }
 

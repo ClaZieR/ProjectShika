@@ -1,1 +1,3 @@
 .output.mp3
+.__pycache__
+.apikeys2py
